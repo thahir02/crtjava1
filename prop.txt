@@ -1,0 +1,2 @@
+num1=1000  // this is text file for Properties1
+num2=5000
