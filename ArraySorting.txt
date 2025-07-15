@@ -1,4 +1,5 @@
-//programe to sort the elememnts of array in ascending order 
+//programe to sort the elememnts of array in ascending order
+//Sorting of array using sort function
 import java.util.*;
 public class ArraySorting
 {
