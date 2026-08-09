@@ -1,5 +1,4 @@
 //for loop patterns in Java 
-//pattern 1 :-
 import java.util.Scanner;
 public class p1 {
 	public static void main(String[] args) {
@@ -420,5 +419,33 @@ Enter the size : 5
    1 2       
   1   3     
  1     4   
+1 2 3 4 5 
+*/
+import java.util.Scanner;
+public class p15 {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("Enter the size : ");
+		int n=scanner.nextInt();
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				if(j==0 || i==n-1 || i==j) {
+					System.out.print(j+1 + " ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+		System.out.println();
+		}
+	}
+}
+/*
+Output :-
+Enter the size : 5
+1         
+1 2       
+1   3     
+1     4   
 1 2 3 4 5 
 */
