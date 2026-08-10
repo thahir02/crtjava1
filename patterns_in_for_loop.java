@@ -449,3 +449,100 @@ Enter the size : 5
 1     4   
 1 2 3 4 5 
 */
+import java.util.Scanner;
+public class p16 {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("Enter the Size : ");
+		int n = scanner.nextInt();
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				if(i>=j) {
+					System.out.print(j+1+" ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+}
+//------------- or -----------------/
+/*
+public class p16 {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("Enter the Size : ");
+		int n = scanner.nextInt();
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<=i;j++) {
+					System.out.print(j+1+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+*/
+/*
+Output :-
+Enter the Size : 5
+1         
+1 2       
+1 2 3     
+1 2 3 4   
+1 2 3 4 5 
+*/
+import java.util.Scanner;
+public class p17 {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	System.out.print("Enter the size : ");
+	int n=scanner.nextInt();
+	for(int i=0;i<n;i++) {
+		for(int j=0;j<n;j++) {
+			 if(i==0 || j==0 || i+j==n-1) {
+				System.out.print(i+j+1+" ");
+			}
+			else {
+				System.out.print("  ");
+			}
+		}
+		System.out.println();
+	}
+}
+}
+/*
+Output :-
+Enter the size : 5
+1 2 3 4 5 
+2     5   
+3   5     
+4 5       
+5   
+*/
+import java.util.Scanner;
+public class p18 {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	System.out.print("Enter the size : ");
+	int n=scanner.nextInt();
+	for(int i=0;i<=n;i++) {
+		for(int j=0;j<=(n-i)-1;j++) {
+			System.out.print(j+1+" ");
+		}
+		System.out.println();
+	}
+}
+}
+/*
+Output :-
+Enter the size : 5
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 	
+*/
